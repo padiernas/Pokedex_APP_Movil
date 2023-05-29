@@ -16,7 +16,6 @@ class PokemonList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Usar el widget Scaffold para envolver el widget AppBar
       appBar: AppBar(
         // Quitar el color de fondo de la barra usando la propiedad backgroundColor y asignándole Colors.transparent
         backgroundColor: Colors.transparent,
@@ -48,10 +47,6 @@ class PokemonList extends StatelessWidget {
             },
           ),
         ],
-        // Asignar un IconThemeData a la propiedad iconTheme para cambiar el color de los iconos de la barra
-        iconTheme: const IconThemeData(
-          color: Colors.red, // El color que quieras para los iconos
-        ),
       ),
       body: FutureBuilder<List<Pokemon>>(
         // El futuro que se espera resolver
