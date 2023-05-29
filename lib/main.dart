@@ -4,7 +4,6 @@ import 'package:pokedex/views/pokemon_list.dart';
 void main() {
   runApp(const Pokedex());
 }
-
 class Pokedex extends StatelessWidget {
   const Pokedex({super.key});
 
